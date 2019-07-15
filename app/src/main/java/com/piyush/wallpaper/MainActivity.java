@@ -13,6 +13,10 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.piyush.wallpaper.Fragments.CollectionsFragment;
+import com.piyush.wallpaper.Fragments.FavouritesFragment;
+import com.piyush.wallpaper.Fragments.PhotosFragment;
+import com.piyush.wallpaper.Utils.Functions;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -79,10 +83,18 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_photos) {
-            // Handle the camera action
+            PhotosFragment photosFragment=new PhotosFragment();
+            Functions.changeMainFragment(MainActivity.this,photosFragment);
+
         } else if (id == R.id.nav_collection) {
 
+            CollectionsFragment collectionsFragment=new CollectionsFragment();
+            Functions.changeMainFragment(MainActivity.this,collectionsFragment);
+
         } else if (id == R.id.nav_favourite) {
+
+            FavouritesFragment favouritesFragment=new FavouritesFragment();
+            Functions.changeMainFragment(MainActivity.this,favouritesFragment);
 
         }
 

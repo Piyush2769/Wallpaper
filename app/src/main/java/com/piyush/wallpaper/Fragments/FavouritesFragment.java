@@ -11,13 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import com.piyush.wallpaper.R;
 
-public class PhotosFragment extends Fragment {
-
+public class FavouritesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       View view=inflater.inflate(R.layout.fragment_photos,container,false);
-       return view;
+        View view=inflater.inflate(R.layout.fragment_favourites,container,false);
+        return view;
     }
 
     @Override
@@ -25,3 +24,4 @@ public class PhotosFragment extends Fragment {
         super.onDestroyView();
     }
 }
+
