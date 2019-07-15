@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.piyush.wallpaper.Utils.SquareImage
+        android:id="@+id/item_photo_photo"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_photo_user_avatar"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="Piyush"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="#fff"
+            android:id="@+id/item_photo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>
